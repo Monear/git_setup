@@ -40,6 +40,21 @@ Push your changes to the remote repository:
 git push -u origin master
 ```
 
+If you encounter the following error:
+
+```
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+```
+
+Run the suggested command to set the upstream branch:
+
+```bash
+git push --set-upstream origin master
+```
+
 ## Summary
 
 1. `git init` - Initializes a new git repository.
@@ -47,5 +62,3 @@ git push -u origin master
 3. `git commit -m "Initial commit"` - Commits the files with a message.
 4. `git remote add origin git@github.com:username/repo.git` - Adds the remote repository.
 5. `git push -u origin master` - Pushes the changes to the remote repository.
-
-Now your local repository is linked to your remote GitHub repository, and your initial commit has been pushed.
